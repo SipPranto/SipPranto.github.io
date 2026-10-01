@@ -83,6 +83,13 @@ footer{padding:30px 0;border-top:1px solid var(--line);text-align:center;color:v
 .social{display:flex;gap:10px;margin-top:34px}
 .social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--mu);transition:.2s}
 .social a:hover{color:var(--ac);border-color:var(--ac);transform:translateY(-2px)}
+.grp>h3{font-size:17px}
+.gd{color:var(--mu);font-size:15px;margin:-6px 0 16px}
+.card{display:flex;flex-direction:column}
+.lk{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:16px}
+.lk a{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--ac);border:1px solid rgba(111,227,207,.35);border-radius:999px;padding:5px 12px;transition:.2s}
+.lk a:hover{background:var(--ac);color:#06201b}
+.lk .ic{width:13px;height:13px}
 .lcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .lcard{display:flex;flex-direction:column;gap:10px;padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,var(--bg2),var(--bg));transition:.25s;position:relative}
 .lcard[hidden]{display:none}
@@ -153,26 +160,45 @@ footer{padding:30px 0;border-top:1px solid var(--line);text-align:center;color:v
 
 <section id="projects"><div class="wrap rv">
 <h2>Projects</h2>
-<div class="grp"><h3>Geospatial &amp; disaster response</h3>
+<div class="grp"><h3>Geospatial &amp; disaster response</h3><p class="gd">Tools that turn spatial data into hazard, risk and evacuation insight.</p>
 <div class="grid">
-<div class="card"><h4>SMCDA: Spatial Multi-Criteria Decision Analysis</h4><p>Geospatial tool for uploading criteria maps (shapefile or raster), constraint mapping, data scaling, hazard mapping with AHP and ML, and vulnerability and risk mapping.</p><small>Python, GDAL, Rasterio, GeoPandas, Scikit-learn, TensorFlow</small></div>
-<div class="card"><h4>HAE: Hazard Action Eye</h4><p>Impact assessment and flood simulation that identifies the buildings affected in a given region.</p><small>Python, GDAL, Rasterio, Shapely</small></div>
-<div class="card"><h4>GeoQuery Tool</h4><p>Ask questions about geospatial datasets in plain language. Combines large language models with GIS for spatial interpretation and visualization.</p><small>LLM, GIS</small></div>
-<div class="card"><h4>Safe Routing Path</h4><p>Network analysis that finds the safest path between two points during a disaster, using graph algorithms and real-time geospatial data for evacuation planning.</p><small>Graph algorithms, geospatial data</small></div>
+<div class="card"><h4>SMCDA: Spatial Multi-Criteria Decision Analysis</h4><p>Upload criteria maps (shapefile or raster), apply constraints and scaling, then build hazard, vulnerability and risk maps with AHP and machine learning.</p><small>Python · GDAL · Rasterio · GeoPandas · Scikit-learn · TensorFlow</small></div>
+<div class="card"><h4>HAE: Hazard Action Eye</h4><p>Runs flood simulations and impact assessment to show which buildings in a region are affected.</p><small>Python · GDAL · Rasterio · Shapely</small></div>
+<div class="card"><h4>GeoQuery Tool</h4><p>Ask questions about geospatial datasets in plain language. Large language models and GIS work together to interpret and visualize the answer.</p><small>LLM · GIS</small></div>
+<div class="card"><h4>Safe Routing Path</h4><p>Finds the safest route between two points during a disaster, using graph algorithms and real-time geospatial data to support evacuation planning.</p><small>Graph algorithms · NetworkX</small></div>
+<div class="card"><h4>Disaster Management Geospatial Tools</h4><p>A collection of geospatial tools for hazard assessment, risk analysis and data-driven decision support in disaster management.</p><small>Python · Geospatial analysis</small><div class="lk"><a href="https://github.com/SipPranto/disaster_management_geospatial_tools" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>Climate &amp; Resilience Geospatial Tool</h4><p>A geospatial tool for analyzing climate and environmental data to support resilience and adaptation planning.</p><small>Python · GeoAI</small><div class="lk"><a href="https://github.com/SipPranto/Climate_and_Resilience" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
 </div></div>
-<div class="grp"><h3>Machine learning &amp; AI</h3>
+<div class="grp"><h3>Transportation</h3><p class="gd">Travel behavior and network resilience, the domain I studied at BUET.</p>
 <div class="grid">
-<div class="card"><h4>Question Answering with LLMs</h4><p>An LLM-based system that answers domain-specific queries.</p></div>
-<div class="card"><h4>Churn Classification with ANN</h4><p>Neural network that classifies customer churn from behavioral data.</p></div>
+<div class="card"><h4>Modal Shift Prediction: Impact of BRT</h4><p>Analyzes travel behavior after the introduction of Bus Rapid Transit in Dhaka and predicts whether a commuter will shift from their current travel mode to BRT. Compares Random Forest, Gradient Boosting, Voting Classifier, SVM and ANN.</p><small>Python · Scikit-learn · ANN</small><div class="lk"><a href="https://github.com/SipPranto/Modal_Shift_Prediction" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>Transport Resilience Index (TRI)</h4><p>A rule-based, ward-level assessment of how a city's transport network survived a historical flood. It combines Infrastructure Functionality, Accessibility and Behavioural Adaptation into one composite score across 9 wards.</p><small>Python · Geospatial · Jupyter</small><div class="lk"><a href="https://github.com/SipPranto/Transport_Resilience-code" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a><a href="https://sippranto.github.io/transport-resilience-project-result/" target="_blank" rel="noopener">Project page<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+</div></div>
+<div class="grp"><h3>Multi-criteria analysis</h3><p class="gd">Weighing many factors at once to support spatial decisions.</p>
+<div class="grid">
+<div class="card"><h4>Multi-Criteria Analysis</h4><p>Multi-criteria decision analysis that scores and ranks alternatives against several weighted criteria, for transparent and repeatable decision support.</p><small>Python · AHP</small><div class="lk"><a href="https://github.com/SipPranto/Multi_Criteria_Analysis" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+</div></div>
+<div class="grp"><h3>Data analysis</h3><p class="gd">SQL, big data and exploratory analysis on real-world style datasets.</p>
+<div class="grid">
+<div class="card"><h4>IPL Cricket Match Data Analysis</h4><p>SQL analysis of IPL match data to answer questions about teams, players, venues and match outcomes.</p><small>SQL</small><div class="lk"><a href="https://github.com/SipPranto/SQL_IPL_DATA_ANALYSIS_PROJECT" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>Sales Data Analysis: Adventure Works</h4><p>SQL analytics on sales data, covering revenue, products, customers and trends to find business insights.</p><small>SQL</small><div class="lk"><a href="https://github.com/SipPranto/SQL_Adventor_work_analytics-sales_data-" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>BigMart Sales Analysis with PySpark</h4><p>Large-scale sales analysis built on PySpark, with data cleaning, transformation and aggregation.</p><small>PySpark · Python</small><div class="lk"><a href="https://github.com/SipPranto/BigMart_Sales_PySprak" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>SQL Query Analysis</h4><p>A collection of SQL queries that practise filtering, joins, aggregation and window functions to answer analytical questions.</p><small>SQL</small><div class="lk"><a href="https://github.com/SipPranto/Query_analysis" target="_blank" rel="noopener">Code<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+<div class="card"><h4>EDA Projects on Kaggle</h4><p>Exploratory data analysis notebooks with cleaning, visualization and statistical insight on a range of datasets.</p><small>Python · Pandas · Seaborn</small><div class="lk"><a href="https://www.kaggle.com/prantosifat/code" target="_blank" rel="noopener">Kaggle notebooks<svg class="ic"><use href="#i-ar"/></svg></a></div></div>
+</div></div>
+<div class="grp"><h3>Machine learning &amp; AI</h3><p class="gd">Models and pipelines for prediction, classification and language tasks.</p>
+<div class="grid">
+<div class="card"><h4>Question Answering with LLMs</h4><p>An LLM-based system that answers domain-specific questions.</p></div>
+<div class="card"><h4>Churn Classification with ANN</h4><p>A neural network that classifies customer churn from behavioral data.</p></div>
 <div class="card"><h4>Cohort, Retention &amp; Clustering</h4><p>Cohort and retention analysis with clustering to understand customer behavior.</p></div>
-<div class="card"><h4>Object Detection with CNN</h4><p>Convolutional network designed and trained for object detection on image datasets.</p></div>
-<div class="card"><h4>Text Classification</h4><p>Machine learning pipeline that sorts text documents into predefined categories.</p></div>
-<div class="card"><h4>Forecasting PM2.5 with ARIMA</h4><p>Time series model, developed and deployed, to forecast PM2.5 concentrations.</p></div>
+<div class="card"><h4>Object Detection with CNN</h4><p>A convolutional neural network designed and trained for object detection on image datasets.</p></div>
+<div class="card"><h4>Text Classification</h4><p>A machine learning pipeline that sorts text documents into predefined categories.</p></div>
+<div class="card"><h4>Forecasting PM2.5 with ARIMA</h4><p>A time series model, developed and deployed, to forecast PM2.5 concentrations.</p></div>
 </div></div>
-<div class="grp"><h3>Civil engineering tools</h3>
+<div class="grp"><h3>Civil engineering tools</h3><p class="gd">Where engineering knowledge meets code.</p>
 <div class="grid">
 <div class="card"><h4>Concrete Strength Prediction</h4><p>Machine learning models that predict the compressive strength of concrete.</p></div>
-<div class="card"><h4>Concrete Mix Design Software</h4><p>MATLAB tool for designing concrete mixes from user-defined parameters.</p></div>
+<div class="card"><h4>Concrete Mix Design Software</h4><p>A MATLAB tool for designing concrete mixes from user-defined parameters.</p></div>
 </div></div>
 </div></section>
 
